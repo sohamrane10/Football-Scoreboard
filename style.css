@@ -1,0 +1,161 @@
+body {
+    font-family: 'Banschrift', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+    margin: 0;
+    background-image: url('ucl stadium.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.center {
+    display: flex; /* or use text-align: center */
+    justify-content: center;
+}
+
+#minutes {
+    font-size: 2em; /* Adjust the size as needed */
+}
+
+.start-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.end-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.ucl-logo {
+    top: 10px;
+    width: 125px;
+    height: auto;
+    object-fit: contain;
+}
+
+.control-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.control-btn:hover {
+    background-color: #0056b3;
+}
+
+.game-time {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px 0;
+    align-items: center
+}
+
+.team {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    width: 40%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.team-logo1 {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.team-logo2 {
+    width: 125px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Banschrift'; /* Assuming you have Banschrift font */
+    text-align: center;
+
+    margin-bottom: 10px;
+    color: #ffffff; /* Gold color for team names */
+    display: inline;
+}
+
+.main-score {
+    font-size: 4em; /* Smaller score size */
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #ffffff; /* Gold border for score */
+    display: inline-block; /* Keep the score in a box */
+}
+
+.stats p {
+    font-family: 'Banschrift';
+    text-decoration: underline;
+    font-size: 1.2em;
+    /* Underline for all statistics */
+}
+
+.stat-btn, .score-btn, .reset-btn, .extra-time-btn, .penalties-btn, .half-time-btn {
+    font-size: 1em;
+    font-family: 'Banschrift';
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stat-btn:hover, .score-btn:hover, .reset-btn:hover, .extra-time-btn:hover, .penalties-btn:hover, .half-time-btn{
+    background-color: darkblue;
+    color: white;
+}
+
+.reset-btn {
+    font-family: 'Banschrift';
+    padding: 10px 20px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

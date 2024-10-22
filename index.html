@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <button class="start-btn" id="startBtn">Start New Game</button>
+            <img src="ucllogo.png" alt="UCL Logo" class="ucl-logo">
+            <button class="end-btn" id="endBtn">End Game</button>
+        </div>
+        <h1>Football Scoreboard</h1>
+        <h2><div class="center">
+            <span id="minutes">0'</span>
+        </div>
+        </h2>
+        <div class="scoreboard">
+            <div class="team" id="teamA">
+                <div class="team-name">
+                    <img src="fcb_logo_PNG22.png" alt="Team A Logo" class="team-logo1"><br />
+                    <h2>FC Barcelona</h2>
+                </div>
+                <div class="main-score">
+                    <span id="scoreA">0</span>
+                </div>
+                <div class="stats">
+                    <p><span id="shotsA">0</span> Shots <button class="stat-btn" id="incrementShotsA"></button></p>
+                    <p><span id="shotsOnTargetA">0</span> Shots on Target <button class="stat-btn" id="incrementShotsOnTargetA"></button></p>
+                    <p><span id="foulsA">0</span> Fouls <button class="stat-btn" id="incrementFoulsA"></button></p>
+                    <p><span id="cornersA">0</span> Corners <button class="stat-btn" id="incrementCornersA"></button></p>
+                    <p><span id="freeKicksA">0</span> Free Kicks <button class="stat-btn" id="incrementFreeKicksA"></button></p>
+                </div>
+                <button class="score-btn" id="incrementA"></button>
+            </div>
+            <div class="team" id="teamB">
+                <div class="team-name">
+                    <img src="Logo Real Madrid.png" alt="Team B Logo" class="team-logo2"><br />
+                    <h2>Real Madrid</h2>
+                </div>
+                <div class="main-score">
+                    <span id="scoreB">0</span>
+                </div>
+                <div class="stats">
+                    <p><span id="shotsB">0</span> Shots <button class="stat-btn" id="incrementShotsB"></button></p>
+                    <p><span id="shotsOnTargetB">0</span> Shots on Target <button class="stat-btn" id="incrementShotsOnTargetB"></button></p>
+                    <p><span id="foulsB">0</span> Fouls <button class="stat-btn" id="incrementFoulsB"></button></p>
+                    <p><span id="cornersB">0</span> Corners <button class="stat-btn" id="incrementCornersB"></button></p>
+                    <p><span id="freeKicksB">0</span> Free Kicks <button class="stat-btn" id="incrementFreeKicksB"></button></p>
+                </div>
+                <button class="score-btn" id="incrementB"></button>
+            </div>
+        </div>
+        <button class="reset-btn" id="resetBtn">Reset Scores</button>
+        <button class="half-time-btn" id="halfTimeBtn">Half Time</button>
+
+<!-- Extra Time and Penalties Buttons -->
+<button class="extra-time-btn" id="extraTimeBtn">Extra Time</button>
+<button class="penalties-btn" id="penaltiesBtn">Penalties</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
